@@ -23,14 +23,14 @@ export default function Section({
       <div className="container">
         <div className="text-center mb-12 md:mb-16">
           <h2 className={cn(
-            'text-3xl md:text-4xl font-semibold text-brand-fg mb-4',
+            'text-3xl md:text-4xl font-semibold text-brand-fg mb-4 font-sans',
             titleClassName
           )}>
             {title}
           </h2>
           {description && (
             <p className={cn(
-              'text-lg text-brand-fgMuted max-w-2xl mx-auto',
+              'text-lg text-brand-fgMuted max-w-2xl mx-auto font-serif',
               descriptionClassName
             )}>
               {description}

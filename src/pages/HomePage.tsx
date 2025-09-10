@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight, CheckCircle, Star, Users, Zap, Shield, Sparkles } from 'lucide-react'
+import EulerHero from '@/components/Hero/EulerHero'
 import Button from '@/components/UI/Button'
 import Card from '@/components/UI/Card'
 import Section from '@/components/UI/Section'
@@ -10,13 +11,13 @@ const features = [
     icon: Zap,
     title: 'Lightning Fast',
     description: 'Built with performance in mind, delivering blazing fast user experiences.',
-    accentColor: 'text-brand-accentCyan'
+    accentColor: 'text-brand-accentPurple'
   },
   {
     icon: Shield,
     title: 'Secure by Design',
     description: 'Enterprise-grade security with built-in protection and compliance.',
-    accentColor: 'text-brand-accentPurple'
+    accentColor: 'text-brand-accentBlue'
   },
   {
     icon: Users,
@@ -52,7 +53,7 @@ const testimonials = [
 
 export default function HomePage() {
   const [email, setEmail] = useState('')
-  
+
   const handleNewsletterSignup = (e: React.FormEvent) => {
     e.preventDefault()
     // Handle newsletter signup
@@ -62,60 +63,12 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-radial-spotlight"></div>
-        <div className="absolute -inset-x-32 -top-40 h-[480px] bg-hero-sweep opacity-15 blur-3xl"></div>
-        <div className="container relative z-10 py-28 md:py-36">
-          <div className="text-center max-w-4xl mx-auto">
-            <div className="badge-soft inline-flex items-center gap-2 mb-6">
-              <Sparkles className="w-4 h-4 text-brand-accentCyan" />
-              Unlock the Power of Technology
-            </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-white-900 mb-6">
-              Euler Digital Solution
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6D28D9] to-[#ffffff]">
-                {' '}Software Development
-              </span>
-            </h1>
-            <h1 className="text-4xl md:text-6xl font-semibold leading-tight text-balance text-brand-fg mb-6">
-              A technology company developing cutting-edge software
-            </h1>
-            <p className="text-lg md:text-xl text-brand-fgMuted mb-8 max-w-2xl mx-auto">
-              Transforming businesses with cutting-edge solutions that drive innovation and growth
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-              <Link to="/contact" className="btn-primary">
-                Learn more →
-              </Link>
-              <Link to="/services" className="btn-secondary">
-                View Services
-              </Link>
-            </div>
-            
-            {/* Social proof card */}
-            <div className="glass rounded-2xl p-6 shadow-card max-w-3xl mx-auto">
-              <p className="text-brand-fgMuted mb-3">
-                Move faster. <span className="text-brand-accentPurple">Think bigger.</span>
-              </p>
-              <div className="flex items-center justify-center gap-3">
-                <div className="flex -space-x-2">
-                  {[1, 2, 3, 4].map((i) => (
-                    <div key={i} className="w-8 h-8 bg-brand-accentCyan rounded-full border-2 border-brand-bg"></div>
-                  ))}
-                </div>
-                <div className="text-sm text-brand-fg">
-                  <span className="font-semibold">100k</span> Happy Customers
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Hero Section (Foresite) */}
+      <EulerHero />
 
       {/* Features Section */}
-      <Section 
-        title="What We Offer" 
+      <Section
+        title="What We Offer"
         description="Discover the powerful features that make Euler the leading choice for modern applications"
         className="bg-brand-bgElevated/20"
       >
@@ -124,15 +77,15 @@ export default function HomePage() {
             <div className={`w-12 h-12 mx-auto mb-4 rounded-xl bg-brand-bgElevated flex items-center justify-center ${feature.accentColor}`}>
               <feature.icon className="w-6 h-6" />
             </div>
-            <h3 className="text-xl font-semibold text-brand-fg mb-2">{feature.title}</h3>
-            <p className="text-brand-fgMuted">{feature.description}</p>
+            <h3 className="text-xl font-semibold text-brand-fg mb-2 font-sans">{feature.title}</h3>
+            <p className="text-brand-fgMuted font-serif">{feature.description}</p>
           </Card>
         ))}
       </Section>
 
       {/* Testimonials Section */}
-      <Section 
-        title="What Our Customers Say" 
+      <Section
+        title="What Our Customers Say"
         description="Join thousands of satisfied customers who trust Euler for their digital transformation"
       >
         {testimonials.map((testimonial, index) => (
@@ -142,12 +95,12 @@ export default function HomePage() {
                 <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
               ))}
             </div>
-            <p className="text-brand-fgMuted mb-4 italic">"{testimonial.content}"</p>
+            <p className="text-brand-fgMuted mb-4 italic font-serif">"{testimonial.content}"</p>
             <div className="flex items-center justify-center space-x-3">
               <div className="w-10 h-10 bg-brand-accentPurple rounded-full"></div>
               <div>
-                <p className="font-semibold text-brand-fg">{testimonial.name}</p>
-                <p className="text-sm text-brand-fgMuted">{testimonial.role}</p>
+                <p className="font-semibold text-brand-fg font-sans">{testimonial.name}</p>
+                <p className="text-sm text-brand-fgMuted font-serif">{testimonial.role}</p>
               </div>
             </div>
           </Card>

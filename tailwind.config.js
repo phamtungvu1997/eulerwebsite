@@ -14,20 +14,19 @@ export default {
     extend: {
       colors: {
         brand: {
-          // Light corporate theme (SoftwareMind-like)
-          bg: "#FFFFFF",               // page background
-          bgElevated: "#F8FAFC",       // cards/sections
+          // Light theme aligned to White / Black-Dark Blue / Purple
+          bg: "#FFFFFF",               // page background (white)
+          bgElevated: "#F8FAFC",       // cards/sections (very light)
           border: "#E5E7EB",           // hairline borders
-          fg: "#0F172A",               // main text (slate-900)
+          fg: "#0B1220",               // main text (black/dark-blue)
           fgMuted: "#475569",          // secondary text (slate-600)
-          // Primary = orange CTA
-          primary: "#F97316",          // orange-500
-          primary700: "#EA580C",       // orange-600/700 (hover)
+          // Primary = Purple
+          primary: "#6D28D9",          // violet-700
+          primary700: "#5B21B6",       // darker purple (hover)
           primaryForeground: "#FFFFFF",
-          // Accents (links/info if needed)
-          accentBlue: "#2563EB",       // link / emphasis
-          success: "#16A34A",
-          info: "#0EA5E9"
+          // Accents
+          accentBlue: "#1E3A8A",       // dark blue accent
+          accentPurple: "#7C3AED",      // purple accent (violet-600)
         }
       },
       boxShadow: {
@@ -35,16 +34,16 @@ export default {
         soft: "0 6px 20px rgba(2, 6, 23, 0.05)"
       },
       backgroundImage: {
-        // nhẹ nhàng, giúp chữ trắng nổi trên video
         "hero-vignette":
           "radial-gradient(1200px 600px at 30% 10%, rgba(0,0,0,0.35), transparent 60%), radial-gradient(1000px 480px at 80% 40%, rgba(0,0,0,0.25), transparent 65%)",
         "hero-top":
           "linear-gradient(to bottom, rgba(0,0,0,0.45), rgba(0,0,0,0))",
       },
-      ringColor: { brand: "#F97316" },
+      ringColor: { brand: "#6D28D9" },
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
-        display: ["Poppins", "system-ui", "sans-serif"]
+        display: ["Poppins", "system-ui", "sans-serif"],
+        serif: ["Merriweather", "serif"]
       },
       animation: {
         "fade-in": "fadeIn .5s ease-in-out",

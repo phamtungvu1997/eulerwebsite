@@ -92,3 +92,7 @@
 .hero-subtitle {
   @apply mt-5 max-w-2xl text-lg text-white/80;
 }
+
+header{
+  background: rgba(248, 248, 248, .8);
+}
