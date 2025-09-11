@@ -89,11 +89,19 @@ export default function EulerHero() {
                   "PRODUCT TEAMS ACROSS",
                   "FINTECH",
                   "HEALTHTECH",
-                  "EULERBANK"
+                  "EULERBANK",
+                  "PRODUCT TEAMS ACROSS",
+                  "FINTECH",
+                  "HEALTHTECH",
+                  "EULERBANK",
                 ].map((brand, i) => (
                   <TrustedLogo key={`a-${i}`} label={brand} />
                 ))}
                 {[
+                  "PRODUCT TEAMS ACROSS",
+                  "FINTECH",
+                  "HEALTHTECH",
+                  "EULERBANK",
                   "PRODUCT TEAMS ACROSS",
                   "FINTECH",
                   "HEALTHTECH",
