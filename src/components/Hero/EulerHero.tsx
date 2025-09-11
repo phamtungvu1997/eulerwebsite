@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
+import TrustedLogo from "./TrustedLogo";
 
 export default function EulerHero() {
   return (
@@ -9,8 +10,8 @@ export default function EulerHero() {
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1974&auto=format&fit=crop')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       >
         {/* Overlay */}
@@ -22,7 +23,12 @@ export default function EulerHero() {
               Building bridges from vision to reality
             </h1>
             <p className="mt-4 text-lg text-white/80">
-              At Euler Digital, we build tailored digital solutions that connect your vision with real-world impact. We help empower your business with innovative technology, crafted just for you. Helps you launch and evolve products faster with dedicated teams, AI/ML, cloud-native engineering, and secure global delivery — operating 24/7 across EU and Asia time zones.
+              At Euler Digital, we build tailored digital solutions that connect
+              your vision with real-world impact. We help empower your business
+              with innovative technology, crafted just for you. Helps you launch
+              and evolve products faster with dedicated teams, AI/ML,
+              cloud-native engineering, and secure global delivery — operating
+              24/7 across EU and Asia time zones.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <Link
@@ -45,17 +51,61 @@ export default function EulerHero() {
       {/* Separator */}
       <div className="h-[2px] w-full bg-brand-accentPurple"></div>
 
-      {/* Trusted logos */}
-      <div className="container py-8">
-        <div className="flex flex-wrap items-center justify-center gap-8 opacity-80">
-          {/* Placeholder logo blocks */}
-          {[1, 2, 3, 4, 5, 6].map((i) => (
-            <div key={i} className="h-8 w-28 bg-brand-bgElevated border border-brand-border rounded-md"></div>
-          ))}
+      {/* Trusted logos – marquee */}
+      <div className="bg-white py-12">
+        <div className="container">
+          <div className="text-center">
+            <h2 className="text-xl md:text-2xl font-semibold text-gray-800">
+              Trusted by leading enterprises to secure modern infrastructure
+            </h2>
+            <p className="mt-2 text-gray-500">
+              400+ companies rely on Euler Digital for mission-critical delivery
+            </p>
+          </div>
+
+          {/* Marquee */}
+          <div className="relative mt-8 overflow-hidden">
+            <style>{`
+        @keyframes marquee-slide {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .marquee-track {
+          display: flex;
+          gap: 3.5rem;         
+          width: max-content;   
+          animation: marquee-slide 28s linear infinite;
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .marquee-track { animation: none; }
+        }
+        .marquee:hover .marquee-track { animation-play-state: paused; }
+      `}</style>
+
+            <div className="marquee">
+              {/* track 1 */}
+              <div className="marquee-track opacity-80">
+                {[
+                  "PRODUCT TEAMS ACROSS",
+                  "FINTECH",
+                  "HEALTHTECH",
+                  "EULERBANK"
+                ].map((brand, i) => (
+                  <TrustedLogo key={`a-${i}`} label={brand} />
+                ))}
+                {[
+                  "PRODUCT TEAMS ACROSS",
+                  "FINTECH",
+                  "HEALTHTECH",
+                  "EULERBANK"
+                ].map((brand, i) => (
+                  <TrustedLogo key={`b-${i}`} label={brand} />
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
-
-
