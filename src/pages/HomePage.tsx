@@ -1,55 +1,13 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ArrowRight, CheckCircle, Star, Users, Zap, Shield, Sparkles } from 'lucide-react'
+import { Star } from 'lucide-react'
 import EulerHero from '@/components/Hero/EulerHero'
 import Button from '@/components/UI/Button'
 import Card from '@/components/UI/Card'
 import Section from '@/components/UI/Section'
+import { FEATURES, TESTIMONIALS } from '@/constants'
+import Features from '@/components/Features/Features'
 
-const features = [
-  {
-    icon: Zap,
-    title: 'Lightning Fast',
-    description: 'Built with performance in mind, delivering blazing fast user experiences.',
-    accentColor: 'text-brand-accentPurple'
-  },
-  {
-    icon: Shield,
-    title: 'Secure by Design',
-    description: 'Enterprise-grade security with built-in protection and compliance.',
-    accentColor: 'text-brand-accentBlue'
-  },
-  {
-    icon: Users,
-    title: 'Team Collaboration',
-    description: 'Work together seamlessly with real-time collaboration features.',
-    accentColor: 'text-brand-accentBlue'
-  }
-]
-
-const testimonials = [
-  {
-    name: 'Sarah Johnson',
-    role: 'CTO at TechCorp',
-    content: 'Euler has transformed how we build and deploy applications. The performance improvements are incredible.',
-    rating: 5,
-    avatar: '/api/placeholder/40/40'
-  },
-  {
-    name: 'Michael Chen',
-    role: 'Lead Developer',
-    content: 'The developer experience is unmatched. Clean code, great documentation, and excellent support.',
-    rating: 5,
-    avatar: '/api/placeholder/40/40'
-  },
-  {
-    name: 'Emily Rodriguez',
-    role: 'Product Manager',
-    content: 'We\'ve seen a 40% increase in user engagement since implementing Euler solutions.',
-    rating: 5,
-    avatar: '/api/placeholder/40/40'
-  }
-]
 
 export default function HomePage() {
   const [email, setEmail] = useState('')
@@ -67,28 +25,14 @@ export default function HomePage() {
       <EulerHero />
 
       {/* Features Section */}
-      <Section
-        title="What We Offer"
-        description="Discover the powerful features that make Euler the leading choice for modern applications"
-        className="bg-brand-bgElevated/20"
-      >
-        {features.map((feature, index) => (
-          <Card key={index} className="text-center">
-            <div className={`w-12 h-12 mx-auto mb-4 rounded-xl bg-brand-bgElevated flex items-center justify-center ${feature.accentColor}`}>
-              <feature.icon className="w-6 h-6" />
-            </div>
-            <h3 className="text-xl font-semibold text-brand-fg mb-2 font-sans">{feature.title}</h3>
-            <p className="text-brand-fgMuted font-serif">{feature.description}</p>
-          </Card>
-        ))}
-      </Section>
+      <Features />
 
       {/* Testimonials Section */}
       <Section
         title="What Our Customers Say"
         description="Join thousands of satisfied customers who trust Euler for their digital transformation"
       >
-        {testimonials.map((testimonial, index) => (
+        {TESTIMONIALS.map((testimonial, index) => (
           <Card key={index} className="text-center">
             <div className="flex justify-center mb-4">
               {[...Array(testimonial.rating)].map((_, i) => (
