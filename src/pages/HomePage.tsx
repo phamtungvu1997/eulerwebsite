@@ -7,6 +7,7 @@ import Card from '@/components/UI/Card'
 import Section from '@/components/UI/Section'
 import { FEATURES, TESTIMONIALS } from '@/constants'
 import Features from '@/components/Features/Features'
+import ServiceProvided from '@/components/ServiceProvided/ServiceProvided'
 
 
 export default function HomePage() {
@@ -26,6 +27,9 @@ export default function HomePage() {
 
       {/* Features Section */}
       <Features />
+
+      {/* What We Offer Section */}
+      <ServiceProvided />
 
       {/* Testimonials Section */}
       <Section

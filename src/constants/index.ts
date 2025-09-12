@@ -57,3 +57,78 @@ export const TESTIMONIALS = [
     avatar: '/api/placeholder/40/40'
   }
 ]
+
+export const SERVICES = [
+  {
+    title: "Augmented Offices & Dedicated Teams",
+    tagline: "Add velocity fast. Retain domain knowledge.",
+    bullets: ["Staff augmentation", "3–5 person pods", "Squads", "BOT & ODC models"],
+    href: "/services/dedicated-teams",
+  },
+  {
+    title: "AI/ML Development & Integration",
+    tagline: "From proof of concept to production.",
+    bullets: ["Custom models", "MLOps", "Computer Vision", "Chatbots", "Automation"],
+    href: "/services/ai-ml",
+  },
+  {
+    title: "Cloud Services & Transformation",
+    tagline: "Optimize spend. Improve resilience.",
+    bullets: ["Migration", "IaC", "CI/CD", "FinOps", "Multi‑cloud"],
+    href: "/services/cloud",
+  },
+  {
+    title: "Custom Application Development",
+    tagline: "Web, mobile, APIs. Secure, scalable, performant.",
+    bullets: ["API‑first", "Microservices", "Mobile apps", "PWAs"],
+    href: "/services/custom-apps",
+  },
+  {
+    title: "Product Engineering",
+    tagline: "MVPs, modernization, scalable platforms.",
+    bullets: ["Full‑lifecycle SaaS", "Product scaling"],
+    href: "/services/product-engineering",
+  },
+  {
+    title: "Blockchain and Web3 Development",
+    tagline: "De‑risk innovation.",
+    bullets: ["IoT", "AR/VR", "Web3", "Low‑code", "Edge"],
+    href: "/services/advanced-tech",
+  },
+  {
+    title: "Data & Analytics",
+    tagline: "Turn raw data into real‑time insights.",
+    bullets: ["Warehouses", "Pipelines", "BI", "Big data platforms"],
+    href: "/services/data",
+  },
+  {
+    title: "QA & Testing",
+    tagline: "Test faster. Ship with confidence.",
+    bullets: ["Automation", "Performance", "Continuous testing"],
+    href: "/services/qa-testing",
+  },
+  {
+    title: "Cybersecurity Services",
+    tagline: "Security that scales with your stack.",
+    bullets: ["Assessments", "Compliance (GDPR/HIPAA)", "SOC", "Zero‑trust"],
+    href: "/services/cybersecurity",
+  },
+  {
+    title: "Web and Mobile App Development",
+    tagline: "Clear roadmaps. Lower risk.",
+    bullets: ["CTOaaS", "Due diligence", "Architecture review"],
+    href: "/services/consulting",
+  },
+  {
+    title: "Application & Infrastructure Management",
+    tagline: "Run reliably, 24/7.",
+    bullets: ["Managed cloud", "NOC", "SRE", "DRaaS"],
+    href: "/services/managed-services",
+  },
+  {
+    title: "Process Automation",
+    tagline: "Free your team from busywork.",
+    bullets: ["IPA", "RPA", "Workflow automation", "Process mining"],
+    href: "/services/automation",
+  },
+]
