@@ -132,3 +132,51 @@ export const SERVICES = [
     href: "/services/automation",
   },
 ]
+
+export const INDUSTRIES = [
+  {
+    name: 'FinTech',
+    description: 'Digital banking, payments, and secure financial platforms.',
+    logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/visa.svg',
+  },
+  {
+    name: 'HealthTech',
+    description: 'Innovations for healthcare, telemedicine, and patient data.',
+    logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/worldhealthorganization.svg',
+  },
+  {
+    name: 'E-commerce',
+    description: 'Online retail, marketplaces, and global digital storefronts.',
+    logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/shopify.svg',
+  },
+  {
+    name: 'Manufacturing',
+    description: 'Smart factories, automation, and Industry 4.0 solutions.',
+    logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/siemens.svg',
+  },
+  {
+    name: 'Logistics',
+    description: 'Supply chain visibility, fleet tracking, and delivery tech.',
+    logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/fedex.svg',
+  },
+  {
+    name: 'EdTech',
+    description: 'Learning platforms, digital classrooms, and training apps.',
+    logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/coursera.svg',
+  },
+  {
+    name: 'Public Sector',
+    description: 'Government services, compliance, and citizen engagement.',
+    logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/unitednations.svg',
+  },
+  {
+    name: 'Energy',
+    description: 'Smart grids, renewables, and sustainable energy platforms.',
+    logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/victronenergy.svg',
+  },
+  {
+    name: 'Retail',
+    description: 'Omnichannel customer experiences and digital POS systems.',
+    logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/zalando.svg',
+  },
+]
