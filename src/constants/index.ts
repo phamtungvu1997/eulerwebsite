@@ -180,3 +180,36 @@ export const INDUSTRIES = [
     logo: 'https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/zalando.svg',
   },
 ]
+
+export const PHASES = [
+  {
+    phase: 1,
+    title: "Discover",
+    points: ["scope, goals, constraints", "success metrics"],
+  },
+  {
+    phase: 2,
+    title: "Design",
+    points: ["architecture", "delivery plan", "security approach"],
+  },
+  {
+    phase: 3,
+    title: "Build",
+    points: ["agile sprints", "CI/CD", "secure by design"],
+  },
+  {
+    phase: 4,
+    title: "Launch",
+    points: ["readiness checks", "release runbooks", "observability"],
+  },
+  {
+    phase: 5,
+    title: "Operate",
+    points: ["24/7 support", "SLAs", "incident mgmt"],
+  },
+  {
+    phase: 6,
+    title: "Optimize",
+    points: ["MLOps, FinOps, AIOps", "cost & performance tuning"],
+  },
+];

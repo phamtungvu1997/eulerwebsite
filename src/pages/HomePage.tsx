@@ -9,6 +9,10 @@ import { FEATURES, TESTIMONIALS } from "@/constants";
 import Features from "@/components/Features/Features";
 import WhatWeDo from "@/components/ServiceProvided/WhatWeDo";
 import ServiceProvided from "@/components/Industries/Industries";
+import HowWeWork from "@/components/HowWeWork/HowWeWork";
+import WhatToExpect from "@/components/WhatToExpect/WhatToExpect";
+import StrategicPartnership from "@/components/StrategicPartnership/StrategicPartnership";
+import WhyChooseEuler from "@/components/WhyChooseEuler/WhyChooseEuler";
 
 export default function HomePage() {
   const [email, setEmail] = useState("");
@@ -33,6 +37,18 @@ export default function HomePage() {
 
       {/* Industries supported */}
       <ServiceProvided />
+
+      {/* How We Work section */}
+      <HowWeWork />
+
+      {/* What to Expect section */}
+      <WhatToExpect />
+
+      {/* Strategic Partnership section */}
+      <StrategicPartnership />
+
+      {/* Why Choose Euler section */}
+      <WhyChooseEuler />
 
       {/* Testimonials Section */}
       <Section
