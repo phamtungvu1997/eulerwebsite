@@ -36,23 +36,23 @@ export const FEATURES = [
 
 export const TESTIMONIALS = [
   {
-    name: 'Sarah Johnson',
-    role: 'CTO at TechCorp',
-    content: 'Euler has transformed how we build and deploy applications. The performance improvements are incredible.',
+    name: 'Mid‑Market SaaS',
+    role: 'VP Engineering',
+    content: 'The elastic team model helped us ship faster without compromising quality.',
     rating: 5,
     avatar: '/api/placeholder/40/40'
   },
   {
-    name: 'Michael Chen',
-    role: 'Lead Developer',
-    content: 'The developer experience is unmatched. Clean code, great documentation, and excellent support.',
+    name: 'InsurTech Platform',
+    role: 'Head of Infrastructure',
+    content: 'EDS brought us the cloud-native tooling and DevOps muscle we lacked.',
     rating: 5,
     avatar: '/api/placeholder/40/40'
   },
   {
-    name: 'Emily Rodriguez',
-    role: 'Product Manager',
-    content: 'We\'ve seen a 40% increase in user engagement since implementing Euler solutions.',
+    name: 'FinTech Startup',
+    role: 'Founder',
+    content: 'The AI integration didn’t just work — it delivered ROI in weeks.',
     rating: 5,
     avatar: '/api/placeholder/40/40'
   }
