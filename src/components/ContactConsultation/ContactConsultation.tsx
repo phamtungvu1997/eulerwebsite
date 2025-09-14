@@ -77,7 +77,11 @@ export default function ContactConsultation() {
               <div className="flex items-center gap-3">
                 <PhoneIcon />
                 <a href="tel:+4915566286608" className="hover:underline">
-                  +49 155 6628 6608
+                  +31 6 26787722
+                </a>
+                <PhoneIcon />
+                <a href="tel:+4915566286608" className="hover:underline">
+                  +49 1520 2384968
                 </a>
               </div>
               <div className="flex items-start gap-3">
@@ -106,13 +110,13 @@ export default function ContactConsultation() {
                 Schedule A Free Consultation
               </h3>
 
-              <form onSubmit={handleSubmit} className="mt-4 space-y-4">
+              <form onSubmit={handleSubmit} className="sm:flex-row gap-4 max-w-md mx-auto">
                 <Field label="Name">
                   <input
                     name="name"
                     value={form.name}
                     onChange={handleChange}
-                    className="input"
+                    className="input-field flex-1"
                     placeholder="Your name"
                     required
                   />
@@ -123,7 +127,7 @@ export default function ContactConsultation() {
                     name="phone"
                     value={form.phone}
                     onChange={handleChange}
-                    className="input"
+                    className="input-field flex-1"
                     placeholder="+49 ..."
                   />
                 </Field>
@@ -134,7 +138,7 @@ export default function ContactConsultation() {
                     name="email"
                     value={form.email}
                     onChange={handleChange}
-                    className="input"
+                    className="input-field flex-1"
                     placeholder="name@company.com"
                     required
                   />
@@ -145,7 +149,7 @@ export default function ContactConsultation() {
                     name="company"
                     value={form.company}
                     onChange={handleChange}
-                    className="input"
+                    className="input-field flex-1"
                     placeholder="Company Inc."
                   />
                 </Field>
@@ -155,7 +159,7 @@ export default function ContactConsultation() {
                     name="topic"
                     value={form.topic}
                     onChange={handleChange}
-                    className="input"
+                    className="input-field flex-1"
                     required
                   >
                     <option value="" disabled>
@@ -174,7 +178,7 @@ export default function ContactConsultation() {
                     name="message"
                     value={form.message}
                     onChange={handleChange}
-                    className="input h-28 resize-y"
+                    className="input-field flex-1 h-28 resize-y"
                     placeholder="Your message"
                   />
                 </Field>

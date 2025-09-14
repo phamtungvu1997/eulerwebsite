@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { cn } from "@/utils/helpers";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 8);
@@ -27,7 +29,7 @@ export default function Header() {
               <div className="flex flex-shrink-0 items-center">
                 <img
                   className="block h-8 w-auto"
-                  src="src/assets/logo.png"
+                  src="/src/assets/logo.png"
                   alt="Logo"
                 />
               </div>
@@ -35,12 +37,12 @@ export default function Header() {
               {/* Desktop main nav */}
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4">
-                  <a
-                    href="#"
+                  <Link
+                    to="/"
                     className="rounded-md px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100"
                   >
                     Home
-                  </a>
+                  </Link>
 
                   {/* Products Dropdown (desktop) */}
                   <div className="group relative">
@@ -150,24 +152,120 @@ export default function Header() {
                     </div>
                   </div>
 
-                  <a
-                    href="#"
-                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100"
-                  >
-                    Services
-                  </a>
-                  <a
-                    href="#"
+                  {/* Services Dropdown (desktop) */}
+                  <div className="group relative">
+                    <button className="flex items-center rounded-md px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100">
+                      Services
+                      <svg
+                        className="ml-1 h-5 w-5"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        />
+                      </svg>
+                    </button>
+
+                    {/* Services Mega Menu */}
+                    <div className="invisible absolute left-0 z-50 mt-2 w-screen max-w-6xl transform rounded-lg border border-gray-200 bg-white opacity-0 shadow-lg transition-all duration-300 group-hover:visible group-hover:opacity-100 -translate-x-1/4">
+                      <div className="grid grid-cols-1 gap-8 p-6 md:grid-cols-3">
+                        <div>
+                          <h3 className="mb-4 text-lg font-semibold text-gray-900">Development</h3>
+                          <ul className="space-y-3">
+                            <li>
+                              <Link to="/services/dedicated-teams" className="text-gray-600 hover:text-indigo-600">
+                                Dedicated Teams
+                              </Link>
+                            </li>
+                            <li>
+                              <Link to="/services/custom-apps" className="text-gray-600 hover:text-indigo-600">
+                                Custom Applications
+                              </Link>
+                            </li>
+                            <li>
+                              <Link to="/services/product-engineering" className="text-gray-600 hover:text-indigo-600">
+                                Product Engineering
+                              </Link>
+                            </li>
+                            <li>
+                              <Link to="/services/ai-ml" className="text-gray-600 hover:text-indigo-600">
+                                AI/ML Development
+                              </Link>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div>
+                          <h3 className="mb-4 text-lg font-semibold text-gray-900">Infrastructure</h3>
+                          <ul className="space-y-3">
+                            <li>
+                              <Link to="/services/cloud" className="text-gray-600 hover:text-indigo-600">
+                                Cloud Services
+                              </Link>
+                            </li>
+                            <li>
+                              <Link to="/services/managed-services" className="text-gray-600 hover:text-indigo-600">
+                                Managed Services
+                              </Link>
+                            </li>
+                            <li>
+                              <Link to="/services/cybersecurity" className="text-gray-600 hover:text-indigo-600">
+                                Cybersecurity
+                              </Link>
+                            </li>
+                            <li>
+                              <Link to="/services/data" className="text-gray-600 hover:text-indigo-600">
+                                Data & Analytics
+                              </Link>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div>
+                          <h3 className="mb-4 text-lg font-semibold text-gray-900">Specialized</h3>
+                          <ul className="space-y-3">
+                            <li>
+                              <Link to="/services/advanced-tech" className="text-gray-600 hover:text-indigo-600">
+                                Blockchain & Web3
+                              </Link>
+                            </li>
+                            <li>
+                              <Link to="/services/qa-testing" className="text-gray-600 hover:text-indigo-600">
+                                QA & Testing
+                              </Link>
+                            </li>
+                            <li>
+                              <Link to="/services/consulting" className="text-gray-600 hover:text-indigo-600">
+                                Consulting
+                              </Link>
+                            </li>
+                            <li>
+                              <Link to="/services/automation" className="text-gray-600 hover:text-indigo-600">
+                                Process Automation
+                              </Link>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <Link
+                    to="/about"
                     className="rounded-md px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100"
                   >
                     About
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    to="/contact"
                     className="rounded-md px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100"
                   >
                     Contact
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -211,12 +309,12 @@ export default function Header() {
           className={cn("sm:hidden", mobileMenuOpen ? "block" : "hidden")}
         >
           <div className="space-y-1 px-2 pb-3 pt-2">
-            <a
-              href="#"
+            <Link
+              to="/"
               className="block rounded-md bg-gray-100 px-3 py-2 text-base font-medium text-gray-900"
             >
               Home
-            </a>
+            </Link>
 
             {/* Mobile Products Dropdown */}
             <div className="relative">
@@ -285,24 +383,120 @@ export default function Header() {
               </div>
             </div>
 
-            <a
-              href="#"
-              className="block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-100"
-            >
-              Services
-            </a>
-            <a
-              href="#"
+            {/* Mobile Services Dropdown */}
+            <div className="relative">
+              <button
+                className="mobile-dropdown-trigger flex w-full items-center justify-between rounded-md px-3 py-2 text-left text-base font-medium text-gray-900 hover:bg-gray-100"
+                onClick={() => setMobileServicesOpen((v) => !v)}
+                aria-expanded={mobileServicesOpen}
+              >
+                Services
+                <svg
+                  className="h-5 w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  />
+                </svg>
+              </button>
+
+              <div className={cn("mobile-dropdown-content px-4 py-2", mobileServicesOpen ? "block" : "hidden")}>
+                <div className="mb-4 border-l-2 border-indigo-500 pl-2">
+                  <h4 className="mb-2 font-medium text-gray-900">Development</h4>
+                  <ul className="space-y-2">
+                    <li>
+                      <Link to="/services/dedicated-teams" className="block text-gray-600 hover:text-indigo-600">
+                        Dedicated Teams
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/services/custom-apps" className="block text-gray-600 hover:text-indigo-600">
+                        Custom Applications
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/services/product-engineering" className="block text-gray-600 hover:text-indigo-600">
+                        Product Engineering
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/services/ai-ml" className="block text-gray-600 hover:text-indigo-600">
+                        AI/ML Development
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="mb-4 border-l-2 border-indigo-500 pl-2">
+                  <h4 className="mb-2 font-medium text-gray-900">Infrastructure</h4>
+                  <ul className="space-y-2">
+                    <li>
+                      <Link to="/services/cloud" className="block text-gray-600 hover:text-indigo-600">
+                        Cloud Services
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/services/managed-services" className="block text-gray-600 hover:text-indigo-600">
+                        Managed Services
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/services/cybersecurity" className="block text-gray-600 hover:text-indigo-600">
+                        Cybersecurity
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/services/data" className="block text-gray-600 hover:text-indigo-600">
+                        Data & Analytics
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="border-l-2 border-indigo-500 pl-2">
+                  <h4 className="mb-2 font-medium text-gray-900">Specialized</h4>
+                  <ul className="space-y-2">
+                    <li>
+                      <Link to="/services/advanced-tech" className="block text-gray-600 hover:text-indigo-600">
+                        Blockchain & Web3
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/services/qa-testing" className="block text-gray-600 hover:text-indigo-600">
+                        QA & Testing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/services/consulting" className="block text-gray-600 hover:text-indigo-600">
+                        Consulting
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/services/automation" className="block text-gray-600 hover:text-indigo-600">
+                        Process Automation
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <Link
+              to="/about"
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-100"
             >
               About
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="/contact"
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-100"
             >
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       </nav>

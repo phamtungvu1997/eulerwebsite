@@ -1,6 +1,7 @@
 import { SERVICES } from "@/constants";
 import { useState } from "react";
 import Section from "../UI/Section";
+import { Link } from "react-router-dom";
 
 export default function WhatWeDo() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -19,15 +20,16 @@ export default function WhatWeDo() {
         {/* Left column */}
         <div className="space-y-1 border-r pr-4">
           {SERVICES.map((service, i) => (
-            <button
+            <Link
+              to={service.href}
               key={service.title}
               onClick={() => setActiveIndex(i)}
-              className={`block w-full text-left px-3 py-2 rounded-md transition text-black
+              className={`block w-full text-left px-3 py-4 mt-2 rounded-md transition text-black
                 ${activeIndex === i ? "font-bold bg-gray-100" : "font-normal"}
               `}
             >
               {service.title}
-            </button>
+            </Link>
           ))}
         </div>
 
@@ -35,11 +37,12 @@ export default function WhatWeDo() {
         <div className="md:col-span-2">
           <ul className="grid sm:grid-cols-2">
             {SERVICES[activeIndex].bullets.map((bullet) => (
-              <li key={bullet}>
-                <button
+              <li key={bullet} className="pr-2">
+                <Link
+                  to={""}
                   className={`
             group relative block w-full text-left flex items-center justify-between 
-            px-3 py-2 rounded-md transition text-black font-normal 
+            px-3 py-4 mt-2 rounded-md transition text-black font-normal 
             bg-slate-50
           `}
                 >
@@ -53,7 +56,7 @@ export default function WhatWeDo() {
               transition-all duration-300 group-hover:w-full
             "
                   />
-                </button>
+                </Link>
               </li>
             ))}
           </ul>
