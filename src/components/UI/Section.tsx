@@ -4,7 +4,7 @@ import { cn } from "@/utils/helpers";
 interface SectionProps {
   title: string;
   description?: string;
-  children: ReactNode;
+  children?: ReactNode;
   className?: string;
   titleClassName?: string;
   descriptionClassName?: string;
