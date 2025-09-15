@@ -43,7 +43,7 @@ export default function ContactConsultation() {
       <div className="container py-16">
         <div className="grid gap-10 md:grid-cols-2 items-start">
           {/* Left: copy & checklist */}
-          <div className="text-black/90">
+          <div className="text-black/90 grid gap-[0.5rem]">
             <span className="inline-block rounded-full bg-white/15 px-3 py-1 text-xs font-semibold tracking-wider uppercase">
               Contact Us
             </span>
@@ -128,7 +128,7 @@ export default function ContactConsultation() {
                     value={form.phone}
                     onChange={handleChange}
                     className="input-field flex-1"
-                    placeholder="+49 ..."
+                    placeholder="Your phone number"
                   />
                 </Field>
 
@@ -214,7 +214,7 @@ function Field({
   children: React.ReactNode
 }) {
   return (
-    <label className="block">
+    <label className="block mt-2">
       <span className="mb-1 block text-xs font-medium text-slate-600">
         {label}
       </span>

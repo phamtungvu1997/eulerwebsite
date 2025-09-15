@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 @layer base {
-  html { scroll-behavior: smooth; }
+  html {
+    scroll-behavior: smooth;
+  }
 
   /* Mặc định LIGHT theme */
   body {
@@ -13,6 +15,10 @@
   /* Optional: nếu sau này có dark mode */
   html.dark body {
     @apply bg-neutral-900 text-neutral-50;
+  }
+
+  input::placeholder {
+    opacity: 0.5;
   }
 }
 
@@ -82,7 +88,9 @@
   }
 
   /* LOGO CLOUD / PROGRESS BAR có thể dùng later */
-  .soft-shadow { @apply shadow-soft; }
+  .soft-shadow {
+    @apply shadow-soft;
+  }
 }
 
 /* Ví dụ quick utility cho hero tiêu đề */
@@ -93,6 +101,6 @@
   @apply mt-5 max-w-2xl text-lg text-white/80;
 }
 
-header{
-  background: rgba(248, 248, 248, .8);
+header {
+  background: rgba(248, 248, 248, 0.8);
 }
