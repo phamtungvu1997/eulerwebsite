@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { apiMiddleware } from "../../middleware/api"
 import MailIcon from "../UI/MailIcon"
 import PhoneIcon from "../UI/PhoneIcon"
 import PinIcon from "../UI/PinIcon"
@@ -13,6 +14,9 @@ export default function ContactConsultation() {
     topic: "",
     message: "",
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitMessage, setSubmitMessage] = useState<string | null>(null)
+  const [submitError, setSubmitError] = useState<string | null>(null)
 
   const TOPICS = [
     "AI/ML & Automation",
@@ -30,10 +34,30 @@ export default function ContactConsultation() {
     setForm((s) => ({ ...s, [name]: value }))
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
-    // TODO: hook up to your API/HubSpot/etc.
-    console.log("Submit:", form)
+    setSubmitMessage(null)
+    setSubmitError(null)
+    setIsSubmitting(true)
+
+    const payload = {
+      ...form,
+      source: "info@euler-digital.com",
+      submittedAt: new Date().toISOString(),
+    }
+
+    const response = await apiMiddleware.post<{ ok: boolean; id?: string }>("/contact", payload)
+
+    if (response.success) {
+      setSubmitMessage("Thanks! Your message has been sent. We'll get back to you shortly.")
+      setForm({ name: "", phone: "", email: "", company: "", topic: "", message: "" })
+    } else {
+      setSubmitError(
+        response.message || "Sorry, something went wrong. Please try again later."
+      )
+    }
+
+    setIsSubmitting(false)
   }
 
   return (
@@ -183,11 +207,22 @@ export default function ContactConsultation() {
                   />
                 </Field>
 
+                {submitMessage && (
+                  <p className="mt-2 text-sm text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-md px-3 py-2">
+                    {submitMessage}
+                  </p>
+                )}
+                {submitError && (
+                  <p className="mt-2 text-sm text-rose-700 bg-rose-50 border border-rose-200 rounded-md px-3 py-2">
+                    {submitError}
+                  </p>
+                )}
                 <button
                   type="submit"
-                  className="mt-2 w-full rounded-full bg-slate-900 px-5 py-3 text-white hover:bg-slate-800 transition"
+                  disabled={isSubmitting}
+                  className="mt-2 w-full rounded-full bg-slate-900 px-5 py-3 text-white hover:bg-slate-800 transition disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  Submit
+                  {isSubmitting ? "Sending..." : "Submit"}
                 </button>
               </form>
             </div>

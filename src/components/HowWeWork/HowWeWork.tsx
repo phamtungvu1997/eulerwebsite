@@ -69,7 +69,7 @@ export default function HowWeWork() {
       </div>
 
       {/* CTA */}
-      <div className="mt-10">
+      <div className="mt-10 flex items-center justify-center">
         <Link
           to="#"
           className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-5 py-3 text-white hover:bg-slate-800 transition"
