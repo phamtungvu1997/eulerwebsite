@@ -91,7 +91,7 @@ export default function ServicesPage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-50 to-accent-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-5xl text-gray-900 mb-6">
             Our Services
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -105,7 +105,7 @@ export default function ServicesPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl text-gray-900 mb-4">
               What We Offer
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">

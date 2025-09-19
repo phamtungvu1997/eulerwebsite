@@ -28,16 +28,16 @@ export default function Header() {
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex flex-shrink-0 items-center">
                 <Link to="/">
-                <img
-                  className="block h-8 w-auto"
-                  src="/src/assets/logo.png"
-                  alt="Logo"
-                />
+                  <img
+                    className="block h-8 w-auto"
+                    src="/src/assets/logo.png"
+                    alt="Logo"
+                  />
                 </Link>
               </div>
 
               {/* Desktop main nav */}
-              <div className="hidden sm:ml-6 sm:block">
+              <div className="hidden sm:ml-6 sm:block my-auto">
                 <div className="flex space-x-4">
                   <Link
                     to="/"
@@ -262,14 +262,14 @@ export default function Header() {
                   >
                     About
                   </Link>
-                  <Link
-                    to="/contact"
-                    className="rounded-md px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100"
-                  >
-                    Contact
-                  </Link>
                 </div>
               </div>
+              <Link
+                to="/contact"
+                className="rounded-full px-6 py-3 text-sm font-medium text-white-900 bg-orange-500 text-white font-medium hover:bg-orange-600 transition-colors ml-auto hidden sm:block"
+              >
+                Contact
+              </Link>
             </div>
 
             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">

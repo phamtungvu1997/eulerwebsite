@@ -19,7 +19,7 @@ export default function EulerHero() {
 
         <div className="container relative z-10 py-20">
           <div className="max-w-2xl text-left">
-            <h1 className="text-4xl md:text-6xl font-bold text-white font-sans">
+            <h1 className="text-4xl md:text-6xl text-white">
               Building bridges from vision to reality
             </h1>
             <p className="mt-4 text-lg text-white/80">
@@ -55,7 +55,7 @@ export default function EulerHero() {
       <div className="bg-white py-12">
         <div className="container">
           <div className="text-center">
-            <h2 className="text-xl md:text-2xl font-semibold text-gray-800">
+            <h2 className="text-xl md:text-2xl text-gray-800">
               Trusted by leading enterprises to secure modern infrastructure
             </h2>
             <p className="mt-2 text-gray-500">

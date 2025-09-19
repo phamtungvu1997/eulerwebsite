@@ -55,7 +55,7 @@ export default function HeroSection({
       <div className="container relative z-10 py-12 flex">
         <div className={`mx-auto max-w-3xl text-white ${alignMap[align]} flex flex-col gap-4`}>
           {children}
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight">{title}</h1>
+          <h1 className="text-4xl md:text-6xl leading-tight">{title}</h1>
           {subtitle && <p className="text-lg md:text-xl text-white/85">{subtitle}</p>}
 
           {ctas.length > 0 && (

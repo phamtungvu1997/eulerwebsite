@@ -41,7 +41,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-50 to-accent-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-5xl text-gray-900 mb-6">
             About Euler
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -56,7 +56,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl md:text-4xl text-gray-900 mb-6">
                 Our Mission
               </h2>
               <p className="text-lg text-gray-600 mb-6">
