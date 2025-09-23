@@ -23,6 +23,9 @@ const CybersecurityPage = lazy(() => import('./pages/services/CybersecurityPage'
 const ConsultingPage = lazy(() => import('./pages/services/ConsultingPage'))
 const ManagedServicesPage = lazy(() => import('./pages/services/ManagedServicesPage'))
 const AutomationPage = lazy(() => import('./pages/services/AutomationPage'))
+const LowCodeNoCodePage = lazy(() => import('./pages/services/LowCodeNoCodePage'))
+const WebAndMobileAppPage = lazy(() => import('./pages/services/WebAndMobileApp'))
+const ShopifyServicesPage = lazy(() => import('./pages/services/ShopifyServicesPage'))
 
 function App() {
   return (
@@ -37,16 +40,24 @@ function App() {
           {/* Service Routes */}
           <Route path="/services/dedicated-teams" element={<DedicatedTeamsPage />} />
           <Route path="/services/ai-ml" element={<AiMlPage />} />
+          {/* Keep old path for backward compatibility */}
           <Route path="/services/cloud" element={<CloudServicesPage />} />
+          <Route path="/services/cloud-services" element={<CloudServicesPage />} />
           <Route path="/services/custom-apps" element={<CustomAppsPage />} />
           <Route path="/services/product-engineering" element={<ProductEngineeringPage />} />
+          {/* Updated slugs to follow page names */}
+          <Route path="/services/blockchain-web3" element={<BlockchainWeb3Page />} />
           <Route path="/services/advanced-tech" element={<BlockchainWeb3Page />} />
+          <Route path="/services/data-analytics" element={<DataAnalyticsPage />} />
           <Route path="/services/data" element={<DataAnalyticsPage />} />
           <Route path="/services/qa-testing" element={<QaTestingPage />} />
           <Route path="/services/cybersecurity" element={<CybersecurityPage />} />
           <Route path="/services/consulting" element={<ConsultingPage />} />
           <Route path="/services/managed-services" element={<ManagedServicesPage />} />
           <Route path="/services/automation" element={<AutomationPage />} />
+          <Route path="/services/low-code-no-code" element={<LowCodeNoCodePage />} />
+          <Route path="/services/web-and-mobile-app" element={<WebAndMobileAppPage />} />
+          <Route path="/services/shopify-services" element={<ShopifyServicesPage />} />
           
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

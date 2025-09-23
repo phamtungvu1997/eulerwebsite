@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle, Star, Users, Zap, Shield, Sparkles } from 'lucide-react'
+import { CheckCircle, Users, Zap, Shield, Sparkles } from 'lucide-react'
 
 
 export const FEATURES = [
@@ -75,7 +75,7 @@ export const SERVICES = [
     title: "Cloud Services & Transformation",
     tagline: "Optimize spend. Improve resilience.",
     bullets: ["Migration", "IaC", "CI/CD", "FinOps", "Multi‑cloud"],
-    href: "/services/cloud",
+    href: "/services/cloud-services",
   },
   {
     title: "Custom Application Development",
@@ -93,13 +93,13 @@ export const SERVICES = [
     title: "Blockchain and Web3 Development",
     tagline: "De‑risk innovation.",
     bullets: ["IoT", "AR/VR", "Web3", "Low‑code", "Edge"],
-    href: "/services/advanced-tech",
+    href: "/services/blockchain-web3",
   },
   {
     title: "Data & Analytics",
     tagline: "Turn raw data into real‑time insights.",
     bullets: ["Warehouses", "Pipelines", "BI", "Big data platforms"],
-    href: "/services/data",
+    href: "/services/data-analytics",
   },
   {
     title: "QA & Testing",
@@ -117,7 +117,7 @@ export const SERVICES = [
     title: "Web and Mobile App Development",
     tagline: "Clear roadmaps. Lower risk.",
     bullets: ["CTOaaS", "Due diligence", "Architecture review"],
-    href: "/services/consulting",
+    href: "/services/web-and-mobile-app",
   },
   {
     title: "Application & Infrastructure Management",

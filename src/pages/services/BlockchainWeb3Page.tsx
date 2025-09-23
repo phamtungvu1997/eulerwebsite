@@ -14,7 +14,7 @@ export default function BlockchainWeb3Page() {
       <HeroSection
         title="Blockchain and Web3 Development"
         subtitle="Secure smart contracts, scalable dApps, enterprise Web3 solutions."
-        bgImage="https://images.unsplash.com/photo-1621508944131-aaa109d71a2d?q=80&w=2000&auto=format&fit=crop"
+        bgImage="https://t3.ftcdn.net/jpg/01/96/96/86/360_F_196968684_zp8obttcJzlY4tWhFHzDGOTbPkdY0Q3p.jpg"
         ctas={[{ label: "Get a Web3 proposal →", to: "/contact" }]}
         height="md"
         align="left"

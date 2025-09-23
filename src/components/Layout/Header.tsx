@@ -206,7 +206,7 @@ export default function Header() {
                           <h3 className="mb-4 text-lg font-semibold text-gray-900">Infrastructure</h3>
                           <ul className="space-y-3">
                             <li>
-                              <Link to="/services/cloud" className="text-gray-600 hover:text-indigo-600">
+                              <Link to="/services/cloud-services" className="text-gray-600 hover:text-indigo-600">
                                 Cloud Services
                               </Link>
                             </li>
@@ -221,7 +221,7 @@ export default function Header() {
                               </Link>
                             </li>
                             <li>
-                              <Link to="/services/data" className="text-gray-600 hover:text-indigo-600">
+                              <Link to="/services/data-analytics" className="text-gray-600 hover:text-indigo-600">
                                 Data & Analytics
                               </Link>
                             </li>
@@ -232,7 +232,7 @@ export default function Header() {
                           <h3 className="mb-4 text-lg font-semibold text-gray-900">Specialized</h3>
                           <ul className="space-y-3">
                             <li>
-                              <Link to="/services/advanced-tech" className="text-gray-600 hover:text-indigo-600">
+                              <Link to="/services/blockchain-web3" className="text-gray-600 hover:text-indigo-600">
                                 Blockchain & Web3
                               </Link>
                             </li>

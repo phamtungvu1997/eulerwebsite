@@ -39,7 +39,7 @@ export default function WhatWeDo() {
             {SERVICES[activeIndex].bullets.map((bullet) => (
               <li key={bullet} className="pr-2">
                 <Link
-                  to={""}
+                  to={SERVICES[activeIndex].href}
                   className={`
             group relative block w-full text-left flex items-center justify-between 
             px-3 py-4 mt-2 rounded-md transition text-black font-normal 
