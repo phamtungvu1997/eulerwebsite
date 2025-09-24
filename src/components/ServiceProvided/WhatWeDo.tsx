@@ -21,7 +21,7 @@ export default function WhatWeDo() {
         <div className="space-y-1 border-r pr-4">
           {SERVICES.map((service, i) => (
             <Link
-              to={service.href}
+              to={"#"}
               key={service.title}
               onClick={() => setActiveIndex(i)}
               className={`block w-full text-left px-3 py-4 mt-2 rounded-md transition text-black

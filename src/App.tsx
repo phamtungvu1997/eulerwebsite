@@ -40,12 +40,10 @@ function App() {
           {/* Service Routes */}
           <Route path="/services/dedicated-teams" element={<DedicatedTeamsPage />} />
           <Route path="/services/ai-ml" element={<AiMlPage />} />
-          {/* Keep old path for backward compatibility */}
           <Route path="/services/cloud" element={<CloudServicesPage />} />
           <Route path="/services/cloud-services" element={<CloudServicesPage />} />
           <Route path="/services/custom-apps" element={<CustomAppsPage />} />
           <Route path="/services/product-engineering" element={<ProductEngineeringPage />} />
-          {/* Updated slugs to follow page names */}
           <Route path="/services/blockchain-web3" element={<BlockchainWeb3Page />} />
           <Route path="/services/advanced-tech" element={<BlockchainWeb3Page />} />
           <Route path="/services/data-analytics" element={<DataAnalyticsPage />} />

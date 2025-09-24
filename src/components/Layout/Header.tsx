@@ -175,7 +175,9 @@ export default function Header() {
 
                     {/* Services Mega Menu */}
                     <div className="invisible absolute left-0 z-50 mt-2 w-screen max-w-6xl transform rounded-lg border border-gray-200 bg-white opacity-0 shadow-lg transition-all duration-300 group-hover:visible group-hover:opacity-100 -translate-x-1/4">
-                      <div className="grid grid-cols-1 gap-8 p-6 md:grid-cols-3">
+                      <div className="grid grid-cols-1 gap-8 p-6 md:grid-cols-4">
+
+                        {/* Development */}
                         <div>
                           <h3 className="mb-4 text-lg font-semibold text-gray-900">Development</h3>
                           <ul className="space-y-3">
@@ -196,12 +198,18 @@ export default function Header() {
                             </li>
                             <li>
                               <Link to="/services/ai-ml" className="text-gray-600 hover:text-indigo-600">
-                                AI/ML Development
+                                AI / ML Development
+                              </Link>
+                            </li>
+                            <li>
+                              <Link to="/services/web-and-mobile-app" className="text-gray-600 hover:text-indigo-600">
+                                Web & Mobile App
                               </Link>
                             </li>
                           </ul>
                         </div>
 
+                        {/* Infrastructure */}
                         <div>
                           <h3 className="mb-4 text-lg font-semibold text-gray-900">Infrastructure</h3>
                           <ul className="space-y-3">
@@ -228,6 +236,7 @@ export default function Header() {
                           </ul>
                         </div>
 
+                        {/* Specialized */}
                         <div>
                           <h3 className="mb-4 text-lg font-semibold text-gray-900">Specialized</h3>
                           <ul className="space-y-3">
@@ -251,11 +260,34 @@ export default function Header() {
                                 Process Automation
                               </Link>
                             </li>
+                            <li>
+                              <Link to="/services/low-code-no-code" className="text-gray-600 hover:text-indigo-600">
+                                Low-Code / No-Code
+                              </Link>
+                            </li>
+                          </ul>
+                        </div>
+
+                        {/* Platforms */}
+                        <div>
+                          <h3 className="mb-4 text-lg font-semibold text-gray-900">Platforms</h3>
+                          <ul className="space-y-3">
+                            <li>
+                              <Link to="/services/shopify-services" className="text-gray-600 hover:text-indigo-600">
+                                Shopify Services
+                              </Link>
+                            </li>
+                            <li>
+                              <Link to="/services/advanced-tech" className="text-gray-600 hover:text-indigo-600">
+                                Advanced Tech
+                              </Link>
+                            </li>
                           </ul>
                         </div>
                       </div>
                     </div>
                   </div>
+
                   <Link
                     to="/about"
                     className="rounded-md px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100"
