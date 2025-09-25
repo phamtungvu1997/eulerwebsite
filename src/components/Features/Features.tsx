@@ -7,7 +7,7 @@ export default function Features() {
     <Section
       title="What We Offer"
       description="Discover the powerful features that make Euler the leading choice for modern applications"
-      className="bg-brand-bgElevated/20"
+      className="bg-brand-bgElevated"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12">
         {FEATURES.map((feature, index) => (

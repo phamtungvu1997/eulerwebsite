@@ -28,7 +28,7 @@ export default function AIMLPage() {
         className="bg-white"
       />
 
-      <Section title="What You Get" description="" className="bg-brand-bgElevated/20">
+      <Section title="What You Get" description="" className="bg-brand-bgElevated">
         <BulletGrid
           items={[
             "Custom models for classification, regression, NLP, computer vision, and more",
@@ -55,7 +55,7 @@ export default function AIMLPage() {
         </div>
       </Section>
 
-      <Section title="Our Process" description="" className="bg-brand-bgElevated/20">
+      <Section title="Our Process" description="" className="bg-brand-bgElevated">
         <ol className="grid gap-4 md:grid-cols-2">
           {[
             ["Use Case Discovery", "Define business impact, success metrics, and data sources."],
@@ -83,7 +83,7 @@ export default function AIMLPage() {
         />
       </Section>
 
-      <Section title="Sample KPIs" description="" className="bg-brand-bgElevated/20">
+      <Section title="Sample KPIs" description="" className="bg-brand-bgElevated">
         <KPIGrid
           items={[
             "Model accuracy, latency, and adoption rate",
@@ -117,7 +117,7 @@ export default function AIMLPage() {
         />
       </Section>
 
-      <Section title="" description="" className="bg-brand-bgElevated/20">
+      <Section title="" description="" className="bg-brand-bgElevated">
         <Link
           to="/contact"
           className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-6 py-3 text-white hover:bg-slate-800 transition"

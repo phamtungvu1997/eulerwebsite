@@ -27,7 +27,7 @@ export default function AugmentedTeamsPage() {
         className="bg-white"
       />
 
-      <Section title="What You Get" description="" className="bg-brand-bgElevated/20">
+      <Section title="What You Get" description="" className="bg-brand-bgElevated">
         <BulletGrid
             items={[
               "Access to ready-to-deploy pods (3–5 person teams) within 10–14 days",
@@ -54,7 +54,7 @@ export default function AugmentedTeamsPage() {
         </div>
       </Section>
 
-      <Section title="Our Process" description="" className="bg-brand-bgElevated/20">
+      <Section title="Our Process" description="" className="bg-brand-bgElevated">
         <ol className="grid gap-4 md:grid-cols-2">
           {[
             ["Intake & Scoping", "Understand your needs, roles, timelines, and tech stack."],
@@ -81,7 +81,7 @@ export default function AugmentedTeamsPage() {
         />
       </Section>
 
-      <Section title="Sample KPIs" description="" className="bg-brand-bgElevated/20">
+      <Section title="Sample KPIs" description="" className="bg-brand-bgElevated">
         <KPIGrid
           items={[
             "Sprint goal achievement rate",
@@ -113,7 +113,7 @@ export default function AugmentedTeamsPage() {
         ]}/>
       </Section>
 
-      <Section title="" description="" className="bg-brand-bgElevated/20">
+      <Section title="" description="" className="bg-brand-bgElevated">
         <Link
           to="/contact"
           className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-6 py-3 text-white hover:bg-slate-800 transition"

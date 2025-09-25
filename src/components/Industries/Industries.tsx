@@ -7,7 +7,7 @@ export default function ServiceProvided() {
     <Section
       title="Industries We Support"
       description="From dedicated teams to AI, cloud, and cybersecurity—pick the module you need, when you need it."
-      className="bg-brand-bgElevated/20"
+      className="bg-brand-bgElevated"
     >
       {/* Grid */}
       <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2 xl:grid-cols-3">

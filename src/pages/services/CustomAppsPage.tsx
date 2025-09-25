@@ -30,7 +30,7 @@ export default function CustomAppsPage() {
         </ul>
       </Section>
 
-      <Section title="What You Get" description="" className="bg-brand-bgElevated/20">
+      <Section title="What You Get" description="" className="bg-brand-bgElevated">
         <BulletGrid
           items={[
             "Full-cycle custom development (web, mobile, APIs)",
@@ -57,7 +57,7 @@ export default function CustomAppsPage() {
         </div>
       </Section>
 
-      <Section title="Our Process" description="" className="bg-brand-bgElevated/20">
+      <Section title="Our Process" description="" className="bg-brand-bgElevated">
         <ol className="grid gap-4 md:grid-cols-2">
           {[
             ["Discovery and product vision alignment", ""],
@@ -85,7 +85,7 @@ export default function CustomAppsPage() {
         />
       </Section>
 
-      <Section title="Sample KPIs" description="" className="bg-brand-bgElevated/20">
+      <Section title="Sample KPIs" description="" className="bg-brand-bgElevated">
         <KPIGrid
           items={[
             "User satisfaction (NPS, CSAT)",
@@ -119,7 +119,7 @@ export default function CustomAppsPage() {
         />
       </Section>
 
-      <Section title="" description="" className="bg-brand-bgElevated/20">
+      <Section title="" description="" className="bg-brand-bgElevated">
         <Link
           to="/contact"
           className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-6 py-3 text-white hover:bg-slate-800 transition"

@@ -30,7 +30,7 @@ export default function LowCodeNoCodePage() {
       </Section>
 
       {/* What You Get */}
-      <Section title="What You Get" description="" className="bg-brand-bgElevated/20">
+      <Section title="What You Get" description="" className="bg-brand-bgElevated">
         <h3 className="text-lg font-semibold mt-6">Rapid Application Development</h3>
         <BulletGrid
           items={[
@@ -97,7 +97,7 @@ export default function LowCodeNoCodePage() {
       </Section>
 
       {/* Our Process */}
-      <Section title="Our Process" description="" className="bg-brand-bgElevated/20">
+      <Section title="Our Process" description="" className="bg-brand-bgElevated">
         <ol className="grid gap-4 md:grid-cols-2">
           {[
             ["Requirements Gathering & Planning (Week 1)", "Process analysis, platform selection, user stories, milestones, training assessment."],
@@ -139,7 +139,7 @@ export default function LowCodeNoCodePage() {
       </Section>
 
       {/* CTA */}
-      <Section title="" description="" className="bg-brand-bgElevated/20">
+      <Section title="" description="" className="bg-brand-bgElevated">
         <Link
           to="/contact"
           className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-6 py-3 text-white hover:bg-slate-800 transition"

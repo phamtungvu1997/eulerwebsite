@@ -7,7 +7,7 @@ export default function HowWeWork() {
      <Section
           title="How We Work"
           description="We keep your roadmap moving—securely and fast."
-          className="bg-brand-bgElevated/20 font-sans text-black"
+          className="bg-brand-bgElevated font-sans text-black"
         >
 
       {/* Timeline rail */}

@@ -37,7 +37,7 @@ export default function BlockchainWeb3Page() {
         </p>
       </Section>
 
-      <Section title="What You Get" description="" className="bg-brand-bgElevated/20">
+      <Section title="What You Get" description="" className="bg-brand-bgElevated">
         <h3 className="text-lg font-semibold mt-6">Ethereum Smart Contract Development</h3>
         <BulletGrid
           items={[
@@ -99,7 +99,7 @@ export default function BlockchainWeb3Page() {
         </div>
       </Section>
 
-      <Section title="Our Process" description="" className="bg-brand-bgElevated/20">
+      <Section title="Our Process" description="" className="bg-brand-bgElevated">
         <ol className="grid gap-4 md:grid-cols-2">
           {[
             ["Web3 Architecture Design", "Requirements, network selection, gas estimation, threat modeling."],
@@ -147,7 +147,7 @@ export default function BlockchainWeb3Page() {
         />
       </Section>
 
-      <Section title="Why Choose Euler Digital Service?" description="" className="bg-brand-bgElevated/20">
+      <Section title="Why Choose Euler Digital Service?" description="" className="bg-brand-bgElevated">
         <BulletGrid
           items={[
             "Proven expertise with a decade of complex IT solutions",

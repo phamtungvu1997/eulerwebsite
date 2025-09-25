@@ -32,7 +32,7 @@ export default function ShopifyServicesPage() {
       </Section>
 
       {/* What You Get */}
-      <Section title="What You Get" description="" className="bg-brand-bgElevated/20">
+      <Section title="What You Get" description="" className="bg-brand-bgElevated">
         <h3 className="text-lg font-semibold mt-6">Complete Shopify Store Development</h3>
         <BulletGrid
           items={[
@@ -118,7 +118,7 @@ export default function ShopifyServicesPage() {
       </Section>
 
       {/* Our Process */}
-      <Section title="Our Process" description="" className="bg-brand-bgElevated/20">
+      <Section title="Our Process" description="" className="bg-brand-bgElevated">
         <ol className="grid gap-4 md:grid-cols-2">
           {[
             [
@@ -184,7 +184,7 @@ export default function ShopifyServicesPage() {
       </Section>
 
       {/* Why Choose */}
-      <Section title="Why Choose Euler Digital Service?" description="" className="bg-brand-bgElevated/20">
+      <Section title="Why Choose Euler Digital Service?" description="" className="bg-brand-bgElevated">
         <BulletGrid
           items={[
             "Proven expertise across complex digital builds",

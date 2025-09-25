@@ -27,8 +27,8 @@ export default function Button({
   const variants = {
     primary: 'btn-primary',
     secondary: 'btn-secondary',
-    outline: 'border border-brand-border text-brand-fg hover:bg-brand-bgElevated/20 focus:ring-brand',
-    ghost: 'text-brand-fg hover:bg-brand-bgElevated/20 focus:ring-brand'
+    outline: 'border border-brand-border text-brand-fg hover:bg-brand-bgElevated focus:ring-brand',
+    ghost: 'text-brand-fg hover:bg-brand-bgElevated focus:ring-brand'
   }
   
   const sizes = {

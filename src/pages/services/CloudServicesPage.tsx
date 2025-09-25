@@ -35,7 +35,7 @@ export default function CloudServicesPage() {
         </ul>
       </Section>
 
-      <Section title="What You Get" description="" className="bg-brand-bgElevated/20">
+      <Section title="What You Get" description="" className="bg-brand-bgElevated">
         <BulletGrid
           items={[
             "Cloud migration and modernization",
@@ -63,7 +63,7 @@ export default function CloudServicesPage() {
         </div>
       </Section>
 
-      <Section title="Our Process" description="" className="bg-brand-bgElevated/20">
+      <Section title="Our Process" description="" className="bg-brand-bgElevated">
         <ol className="grid gap-4 md:grid-cols-2">
           {[
             ["Cloud readiness assessment and TCO analysis", ""],
@@ -91,7 +91,7 @@ export default function CloudServicesPage() {
         />
       </Section>
 
-      <Section title="Sample KPIs" description="" className="bg-brand-bgElevated/20">
+      <Section title="Sample KPIs" description="" className="bg-brand-bgElevated">
         <KPIGrid
           items={[
             "Uptime and SLA adherence",
@@ -125,7 +125,7 @@ export default function CloudServicesPage() {
         />
       </Section>
 
-      <Section title="" description="" className="bg-brand-bgElevated/20">
+      <Section title="" description="" className="bg-brand-bgElevated">
         <Link
           to="/contact"
           className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-6 py-3 text-white hover:bg-slate-800 transition"

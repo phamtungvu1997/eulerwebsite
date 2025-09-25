@@ -10,7 +10,7 @@ export default function WhatWeDo() {
     <Section
       title="What We Do"
       description="See how Euler can help your business thrive in the digital age"
-      className="bg-brand-bgElevated/20 font-sans text-black"
+      className="bg-brand-bgElevated font-sans text-black"
     >
       <h2 className="text-3xl font-bold mb-8">
         Services we provide:{" "}

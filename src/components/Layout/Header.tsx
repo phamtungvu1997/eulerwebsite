@@ -19,7 +19,7 @@ export default function Header() {
     <header
       className={cn(
         "sticky top-0 z-50 transition-all duration-300",
-        isScrolled ? "glass hairline-b" : "bg-transparent"
+        isScrolled ? "glass hairline-b" : "bgElevated"
       )}
     >
       <nav className="shadow-lg">
@@ -309,7 +309,7 @@ export default function Header() {
               <div className="sm:hidden">
                 <button
                   type="button"
-                  className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                  className="inline-flex items-center bg-transparent justify-center rounded-md p-2 text-gray-400 hover:bg-gray-300 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
                   aria-expanded={mobileMenuOpen}
                   aria-controls="mobile-menu"
                   id="mobile-menu-button"

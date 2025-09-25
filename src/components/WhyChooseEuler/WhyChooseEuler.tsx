@@ -47,7 +47,7 @@ export default function WhyChooseEuler() {
       <Section
         title="Case Study Highlights"
         description=""
-        className="bg-brand-bgElevated/20 font-sans text-black"
+        className="bg-brand-bgElevated font-sans text-black"
       >
         <div className="mt-6 grid gap-4 md:grid-cols-3">
           {CASE_STUDIES.map((cs) => (

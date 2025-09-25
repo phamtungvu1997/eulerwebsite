@@ -35,7 +35,7 @@ export default function CybersecurityPage() {
       </Section>
 
       {/* What You Get */}
-      <Section title="What You Get" description="" className="bg-brand-bgElevated/20">
+      <Section title="What You Get" description="" className="bg-brand-bgElevated">
         <h3 className="text-lg font-semibold mt-6">Comprehensive Penetration Testing</h3>
         <BulletGrid
           items={[
@@ -104,7 +104,7 @@ export default function CybersecurityPage() {
       </Section>
 
       {/* Our Process */}
-      <Section title="Our Process" description="" className="bg-brand-bgElevated/20">
+      <Section title="Our Process" description="" className="bg-brand-bgElevated">
         <ol className="grid gap-4 md:grid-cols-2">
           {[
             ["Pre-Engagement & Scoping", "Scope & rules of engagement, legal docs, target overview, comms plan, timeline."],
@@ -154,7 +154,7 @@ export default function CybersecurityPage() {
       </Section>
 
       {/* CTA */}
-      <Section title="" description="" className="bg-brand-bgElevated/20">
+      <Section title="" description="" className="bg-brand-bgElevated">
         <Link
           to="/contact"
           className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-6 py-3 text-white hover:bg-slate-800 transition"

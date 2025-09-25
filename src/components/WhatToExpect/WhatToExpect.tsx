@@ -13,7 +13,7 @@ export default function WhatToExpect() {
     <Section
       title="What to Expect"
       description="Key outcomes you can count on when working with us."
-      className="bg-brand-bgElevated/20 font-sans text-black"
+      className="bg-brand-bgElevated font-sans text-black"
     >
       <ul className="mt-8 grid gap-4 sm:grid-cols-2">
         {EXPECTS.map((item, idx) => (

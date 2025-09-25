@@ -35,7 +35,7 @@ export default function QaTestingPage() {
       </Section>
 
       {/* What You Get */}
-      <Section title="What You Get" description="" className="bg-brand-bgElevated/20">
+      <Section title="What You Get" description="" className="bg-brand-bgElevated">
         <h3 className="text-lg font-semibold mt-6">Comprehensive Testing Services</h3>
         <BulletGrid
           items={[
@@ -108,7 +108,7 @@ export default function QaTestingPage() {
       </Section>
 
       {/* Our Process */}
-      <Section title="Our Process" description="" className="bg-brand-bgElevated/20">
+      <Section title="Our Process" description="" className="bg-brand-bgElevated">
         <ol className="grid gap-4 md:grid-cols-2">
           {[
             ["Test Strategy & Planning", "Requirements analysis, scope & risk, environment planning, resourcing, metrics & success criteria."],
@@ -158,7 +158,7 @@ export default function QaTestingPage() {
       </Section>
 
       {/* Why Choose */}
-      <Section title="Why Choose Euler Digital Service?" description="" className="bg-brand-bgElevated/20">
+      <Section title="Why Choose Euler Digital Service?" description="" className="bg-brand-bgElevated">
         <BulletGrid
           items={[
             "Proven expertise across industries and complex projects",

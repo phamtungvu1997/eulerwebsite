@@ -15,8 +15,9 @@ export default {
       colors: {
         brand: {
           // Light theme aligned to White / Black-Dark Blue / Purple
-          bg: "#FFFFFF",               // page background (white)
-          bgElevated: "#F8FAFC",       // cards/sections (very light)
+          bg: "#020d1c",               // page background (black)
+          // bgElevated: "#F8FAFC",       // cards/sections (very light)
+          bgElevated: "#FFFFFF",       // cards/sections (very light)
           border: "#E5E7EB",           // hairline borders
           fg: "#0B1220",               // main text (black/dark-blue)
           fgMuted: "#475569",          // secondary text (slate-600)
@@ -26,7 +27,8 @@ export default {
           primaryForeground: "#FFFFFF",
           // Accents
           accentBlue: "#1E3A8A",       // dark blue accent
-          accentPurple: "#7C3AED",      // purple accent (violet-600)
+          accentPurple: "#7C3AED",
+          bgGrayHover: "#b2b8c3"      // gray accent (gray-600)
         }
       },
       boxShadow: {
@@ -50,10 +52,10 @@ export default {
         "slide-up": "slideUp .35s ease-out"
       },
       keyframes: {
-        fadeIn: { "0%": {opacity:"0"}, "100%": {opacity:"1"} },
+        fadeIn: { "0%": { opacity: "0" }, "100%": { opacity: "1" } },
         slideUp: {
-          "0%": { transform:"translateY(12px)", opacity:"0" },
-          "100%": { transform:"translateY(0)", opacity:"1" }
+          "0%": { transform: "translateY(12px)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" }
         }
       }
     }

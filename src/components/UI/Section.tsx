@@ -19,12 +19,12 @@ export default function Section({
   descriptionClassName = "",
 }: SectionProps) {
   return (
-    <section className={cn("py-16 md:py-24", className)}>
+    <section className={cn("py-16 md:py-24 md:m-24", className)}>
       <div className="container">
         <div className="text-center mb-12 md:mb-16">
           <h2
             className={cn(
-              "text-3xl md:text-4xl font-semibold text-brand-fg mb-4 font-sans",
+              "font-semibold text-brand-fg mb-4 font-sans Title-module--h2--ff335",
               titleClassName
             )}
           >
